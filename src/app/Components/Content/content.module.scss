@@ -1,0 +1,23 @@
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 134px;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 0 20px;
+  }
+}

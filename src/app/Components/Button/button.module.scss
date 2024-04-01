@@ -1,0 +1,43 @@
+.button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 24px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 12px;
+  background-color: #ffffff;
+  img {
+    margin-left: 12px;
+  }
+}
+
+.button:hover {
+  background-color: #f2f0f0;
+}
+
+@media (max-width: 800px) {
+  .button {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    padding: 10px;
+    div {
+      display: none;
+    }
+    img {
+      margin: 0;
+    }
+  }
+}
