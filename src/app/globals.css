@@ -28,6 +28,21 @@ ul {
   transition: all 1s ease-out;
 }
 
+.animation-img1 {
+  transform: scale(0.7);
+  transition: all 1s ease-out;
+}
+
+.animation-img2 {
+  transform: scale(0.7);
+  transition: all 1s ease-out;
+}
+
+.animation-img3 {
+  transform: scale(0.7);
+  transition: all 1s ease-out;
+}
+
 @media (max-width: 1024px) {
   .animation-title {
     right: -400px;
