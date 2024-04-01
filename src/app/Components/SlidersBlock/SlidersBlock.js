@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
+import gsap from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -9,10 +10,13 @@ import Button from "@/app/Components/Button/Button";
 
 export default function SlidersBlock() {
   const [swiper, setSwiper] = useState();
+  useLayoutEffect(() => {
+    gsap.to(".animation-title", { left: 0 });
+  }, []);
   return (
     <div className={styles.sliders__block_wrapper}>
       <div className={styles.sliders__title}>
-        <div>
+        <div className="animation-title">
           <div className={styles.sliders__project}>PROJECT</div>
           <div className={styles.sliders__home}>HOME</div>
         </div>

@@ -21,3 +21,39 @@ a {
 ul {
   list-style: none;
 }
+
+.animation-title {
+  position: absolute;
+  right: -500px;
+  transition: all 1s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .animation-title {
+    right: -400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .animation-title {
+    right: -300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-title {
+    right: -250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .animation-title {
+    right: -200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .animation-title {
+    right: -150px;
+  }
+}
